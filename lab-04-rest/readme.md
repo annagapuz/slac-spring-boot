@@ -53,6 +53,7 @@
 public ResponseEntity<yourPOJO> handle(IllegalArgumentException ex) {
     // Instantiate your POJO
     // set the String value of your POJO to the exception message
+    // set the Integer value of your POJO to the int value of HttpStatus.BAD_REQUEST
     return new ResponseEntity<>(yourPOJO, HttpStatus.BAD_REQUEST);
 }
 ```

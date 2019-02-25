@@ -14,6 +14,8 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     public ResponseEntity<SampleResponse> handle(IllegalArgumentException ex) {
         SampleResponse response = new SampleResponse();
         response.setMessage(ex.getMessage());
+        response.setCount(HttpStatus.BAD_REQUEST.value());
         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
     }
+
 }
