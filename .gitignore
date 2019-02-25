@@ -1,0 +1,7 @@
+# Specify filepatterns you want git to ignore.
+.idea
+target
+.DS_Store
+*.zip
+mvnw*
+
