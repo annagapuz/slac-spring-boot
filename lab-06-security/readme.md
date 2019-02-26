@@ -1,4 +1,4 @@
-# Spring Boot Actuator
+# Spring Boot Security
 
 ## Part One
 * Use [Spring Initializr](https://start.spring.io/) to generate a Spring Boot project with the following dependencies:
